@@ -35,7 +35,7 @@ const config: PlaywrightTestConfig = {
   reporter: [
     ['list'],
     ['json', {  outputFile: 'json_test_report.json' }],
-    ['html',{ outputFolder: 'html_test_report' }],
+    ['html',{ outputFolder: 'playwright-report' }],
     ['dot']
   ],
   
