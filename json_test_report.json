@@ -1,0 +1,270 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 600000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Automation/playwright_test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "chromium",
+        "testDir": "D:/Automation/playwright_test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 100000
+      }
+    ],
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "json_test_report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "html_test_report"
+        }
+      ],
+      [
+        "dot",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "D:/Automation/playwright_test/tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.21.1",
+    "workers": 1,
+    "webServer": null,
+    "_attachments": [],
+    "_configDir": "D:\\Automation\\playwright_test",
+    "_testGroupsCount": 3,
+    "_screenshotsDir": ""
+  },
+  "suites": [
+    {
+      "title": "form.spec.ts",
+      "file": "form.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Form_filling_feature",
+          "file": "form.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "form_submit",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 100000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 72120,
+                      "stdout": [
+                        {
+                          "text": "image uploaded\n"
+                        },
+                        {
+                          "text": "Form submitted\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Automation\\playwright_test\\test-results\\form-Form-filling-feature-form-submit-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Automation\\playwright_test\\test-results\\form-Form-filling-feature-form-submit-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Automation\\playwright_test\\test-results\\form-Form-filling-feature-form-submit-chromium\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Automation\\playwright_test\\test-results\\form-Form-filling-feature-form-submit-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Automation\\playwright_test\\test-results\\form-Form-filling-feature-form-submit-chromium\\test-finished-2.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "form.spec.ts",
+              "line": 15,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "kuehne_nagel.spec.ts",
+      "file": "kuehne_nagel.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Get_Sea_Freight_Quote @fast",
+          "file": "kuehne_nagel.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 100000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 140740,
+                      "error": {
+                        "message": "\u001b[31mTimeout of 100000ms exceeded.\u001b[39m"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Automation\\playwright_test\\test-results\\kuehne_nagel-Get-Sea-Freight-Quote-fast--chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Automation\\playwright_test\\test-results\\kuehne_nagel-Get-Sea-Freight-Quote-fast--chromium\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Automation\\playwright_test\\test-results\\kuehne_nagel-Get-Sea-Freight-Quote-fast--chromium\\test-failed-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "file": "kuehne_nagel.spec.ts",
+              "line": 14,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "profile.spec.ts",
+      "file": "profile.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Form_filling_feature",
+          "file": "profile.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "added_books",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 100000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 68063,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Automation\\playwright_test\\test-results\\profile-Form-filling-feature-added-books-chromium\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Automation\\playwright_test\\test-results\\profile-Form-filling-feature-added-books-chromium\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Automation\\playwright_test\\test-results\\profile-Form-filling-feature-added-books-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "profile.spec.ts",
+              "line": 15,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
