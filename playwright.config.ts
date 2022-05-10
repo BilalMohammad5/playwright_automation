@@ -19,10 +19,8 @@ const config: PlaywrightTestConfig = {
         
          browserName: 'chromium',
         headless: true,
-        //viewport: { width: 1280, height: 720 },
         ignoreHTTPSErrors: true,
         video: 'on',
-       // baseURL : ' https://demoqa.com/automation-practice-form',
         geolocation: { longitude:22, latitude: 57.5 },
         permissions: ['geolocation'],
         screenshot: 'on',
