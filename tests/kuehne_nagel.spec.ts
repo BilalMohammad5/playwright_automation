@@ -1,6 +1,6 @@
 import { test, expect, Page } from '@playwright/test';
 import { helper } from "../helper/helper";
-import { Env } from "../utils/test_data"
+import { testdata } from "../utils/test_data"
 declare const reporter: any;
 import { Browser } from '@playwright/test';
 
