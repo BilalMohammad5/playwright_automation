@@ -30,7 +30,7 @@ const config: PlaywrightTestConfig = {
         },
     },
     {
-      name: 'firefox',
+    name: 'firefox',
       use: {
         
         browserName: 'firefox',
