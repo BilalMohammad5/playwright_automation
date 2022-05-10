@@ -29,6 +29,20 @@ const config: PlaywrightTestConfig = {
         trace:'on',
         },
     },
+    {
+      name: 'firefox',
+      use: {
+        
+        browserName: 'firefox',
+        headless: true,
+        ignoreHTTPSErrors: true,
+        video: 'on',
+        geolocation: { longitude:22, latitude: 57.5 },
+        permissions: ['geolocation'],
+        screenshot: 'on',
+        trace:'on',
+    }
+  }
 
   ],
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
