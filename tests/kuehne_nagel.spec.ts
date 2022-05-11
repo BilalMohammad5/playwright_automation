@@ -2,7 +2,6 @@ import { test, expect, Page } from '@playwright/test';
 import { helper } from "../helper/helper";
 import { testdata } from "../utils/test_data"
 declare const reporter: any;
-import { Browser } from '@playwright/test';
 
 test.describe('Get_Sea_Freight_Quote @fast', () => {
   
