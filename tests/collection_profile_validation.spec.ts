@@ -5,7 +5,7 @@ declare const reporter: any;
 import { Browser } from '@playwright/test';
 
 
-test.describe('validating _book_collection', () => {
+test.describe('validating _book_added_to__collection', () => {
   
   test.beforeEach(async ({ page }) => {
     // Go to the starting url before each test.
@@ -34,7 +34,7 @@ test.describe('validating _book_collection', () => {
   await expect(page).toHaveURL('https://demoqa.com/profile');
   // Click text=Git Pocket Guide
   await page.locator('text=Git Pocket Guide').click();
-  await expect(page).toHaveURL('https://demoqa.com/profile?book=9781449325862');
+  await expect(page).toHaveURL('https://demoqa.com/profile?book=9781449325862'); //validating the presence of added book
   // Click text=Back To Book Store
   await page.locator('text=Back To Book Store').click();
   await expect(page).toHaveURL('https://demoqa.com/profile');
