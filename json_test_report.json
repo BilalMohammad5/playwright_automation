@@ -11,11 +11,11 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "c:/Users/bilal/Desktop/automation/KN_Playwright/kuehne_nagel_playwright/test-results",
+        "outputDir": "C:/Users/bilal/Desktop/automation/KN_Playwright/kuehne_nagel_playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "name": "chromium",
-        "testDir": "c:/Users/bilal/Desktop/automation/KN_Playwright/kuehne_nagel_playwright/tests",
+        "testDir": "C:/Users/bilal/Desktop/automation/KN_Playwright/kuehne_nagel_playwright/tests",
         "testIgnore": [],
         "testMatch": [
           "**/?(*.)@(spec|test).*"
@@ -23,11 +23,11 @@
         "timeout": 100000
       },
       {
-        "outputDir": "c:/Users/bilal/Desktop/automation/KN_Playwright/kuehne_nagel_playwright/test-results",
+        "outputDir": "C:/Users/bilal/Desktop/automation/KN_Playwright/kuehne_nagel_playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "name": "firefox",
-        "testDir": "c:/Users/bilal/Desktop/automation/KN_Playwright/kuehne_nagel_playwright/tests",
+        "testDir": "C:/Users/bilal/Desktop/automation/KN_Playwright/kuehne_nagel_playwright/tests",
         "testIgnore": [],
         "testMatch": [
           "**/?(*.)@(spec|test).*"
@@ -61,7 +61,7 @@
       "max": 5,
       "threshold": 15000
     },
-    "rootDir": "c:/Users/bilal/Desktop/automation/KN_Playwright/kuehne_nagel_playwright/tests",
+    "rootDir": "C:/Users/bilal/Desktop/automation/KN_Playwright/kuehne_nagel_playwright/tests",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -69,26 +69,26 @@
     "workers": 2,
     "webServer": null,
     "_attachments": [],
-    "_configDir": "c:\\Users\\bilal\\Desktop\\automation\\KN_Playwright\\kuehne_nagel_playwright",
-    "_testGroupsCount": 1,
+    "_configDir": "C:\\Users\\bilal\\Desktop\\automation\\KN_Playwright\\kuehne_nagel_playwright",
+    "_testGroupsCount": 2,
     "_screenshotsDir": ""
   },
   "suites": [
     {
-      "title": "form_submission.spec.ts",
-      "file": "form_submission.spec.ts",
+      "title": "collection_profile_validation.spec.ts",
+      "file": "collection_profile_validation.spec.ts",
       "line": 0,
       "column": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Form_filling_feature",
-          "file": "form_submission.spec.ts",
-          "line": 13,
+          "title": "validating _book_added_to__collection",
+          "file": "collection_profile_validation.spec.ts",
+          "line": 8,
           "column": 6,
           "specs": [
             {
-              "title": "form_submit",
+              "title": "added_books",
               "ok": true,
               "tags": [],
               "tests": [
@@ -101,35 +101,25 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 15480,
-                      "stdout": [
-                        {
-                          "text": "input value is [object Promise]\n"
-                        },
-                        {
-                          "text": "image uploaded\n"
-                        },
-                        {
-                          "text": "Form submitted\n"
-                        }
-                      ],
+                      "duration": 66902,
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "attachments": [
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "c:\\Users\\bilal\\Desktop\\automation\\KN_Playwright\\kuehne_nagel_playwright\\test-results\\form_submission-Form-filling-feature-form-submit-chromium\\video.webm"
+                          "path": "C:\\Users\\bilal\\Desktop\\automation\\KN_Playwright\\kuehne_nagel_playwright\\test-results\\collection_profile_validation-validating-book-added-to-collection-added-books-chromium\\video.webm"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "c:\\Users\\bilal\\Desktop\\automation\\KN_Playwright\\kuehne_nagel_playwright\\test-results\\form_submission-Form-filling-feature-form-submit-chromium\\trace.zip"
+                          "path": "C:\\Users\\bilal\\Desktop\\automation\\KN_Playwright\\kuehne_nagel_playwright\\test-results\\collection_profile_validation-validating-book-added-to-collection-added-books-chromium\\trace.zip"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "c:\\Users\\bilal\\Desktop\\automation\\KN_Playwright\\kuehne_nagel_playwright\\test-results\\form_submission-Form-filling-feature-form-submit-chromium\\test-finished-1.png"
+                          "path": "C:\\Users\\bilal\\Desktop\\automation\\KN_Playwright\\kuehne_nagel_playwright\\test-results\\collection_profile_validation-validating-book-added-to-collection-added-books-chromium\\test-finished-1.png"
                         }
                       ]
                     }
@@ -137,9 +127,61 @@
                   "status": "expected"
                 }
               ],
-              "file": "form_submission.spec.ts",
-              "line": 19,
-              "column": 5
+              "file": "collection_profile_validation.spec.ts",
+              "line": 15,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "validating _book_added_to__collection",
+          "file": "collection_profile_validation.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "added_books",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 100000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 79859,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\bilal\\Desktop\\automation\\KN_Playwright\\kuehne_nagel_playwright\\test-results\\collection_profile_validation-validating-book-added-to-collection-added-books-firefox\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\bilal\\Desktop\\automation\\KN_Playwright\\kuehne_nagel_playwright\\test-results\\collection_profile_validation-validating-book-added-to-collection-added-books-firefox\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\bilal\\Desktop\\automation\\KN_Playwright\\kuehne_nagel_playwright\\test-results\\collection_profile_validation-validating-book-added-to-collection-added-books-firefox\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "collection_profile_validation.spec.ts",
+              "line": 15,
+              "column": 3
             }
           ]
         }
