@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
-    "kuchen" :"playwright tests/kuehne_nagel.spec.ts"
-  
-  
+    "tsc": "tsc --incremental -p tsconfig.json",
+    "test": "playwright test -c javaScriptFiles",
+    "chrome" :"npx playwright test --project=chromium --reporter=html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.21.1"
+    "@playwright/test": "^1.21.1",
+    "typescript": "^4.7.4"
   },
   "dependencies": {
     "allure-playwright": "^2.0.0-beta.16"

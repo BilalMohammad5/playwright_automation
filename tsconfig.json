@@ -4,6 +4,7 @@
         "module": "commonjs",
         "moduleResolution": "Node",
         "sourceMap": true,
-        "outDir": "../javaScriptFiles/tests-out",
+        "outDir": "javaScriptFiles",
     }
+    
 }

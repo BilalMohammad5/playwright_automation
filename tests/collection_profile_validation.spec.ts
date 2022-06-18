@@ -1,47 +1,42 @@
-import { test, expect, Page } from '@playwright/test';
+import { test, expect, Page,Browser } from '@playwright/test';
 import { helper } from "../helper/helper";
-import { testdata } from "../utils/test_data"
-declare const reporter: any;
-import { Browser } from '@playwright/test';
+import { testdata } from "../utils/test_data";
+import{LoginPage} from "../Pages/homeScreen";
 
+let loginPage = new LoginPage();
 
-test.describe('validating _book_added_to__collection', () => {
+test.describe('Home_Page', () => {
   
   test.beforeEach(async ({ page }) => {
-    // Go to the starting url before each test.
-    await page.goto('https://demoqa.com/books');
+   
+    await page.goto('https://epos.erply.com/latest/');
+  
+  });
+  test('Product_Search', async ({ page }) => {
+    
+    await page.fill('[name="username"]','testassignment');
+    await page.locator('name="password"]').fill('PosTestAssignment123');
+    await page.locator('[data-testid="login-clockin-button"]').click();
+    await page.locator('[data-testid="pos-name"]').click();
+    await page.locator('[placeholder="Products"]').click();
+    await page.locator('[placeholder="Products"]').fill('fanta');
+    await page.locator('[data-testid="search-result-name"]').click();
+    await page.locator('[data-testid="product-name-cell"]').click();
+    await page.locator('[data-testid="notes"]').click();
+    await page.locator('[data-testid="notes"]').fill('test user search')
+    await page.locator('[data-testid="product-order-form"] >> text=Save').click();
+    await page.locator('[data-testid="header-user-menu"] >> text=Test User').click();
+    await expect(page).toHaveURL('https://epos.erply.com/latest/#');
+    await page.locator('a[role="button"]:has-text("Sign out")').click();
+  
+  });
+  test.afterEach(async ({ page }) => {
+
+  });
+  test.afterAll(async ({ page }) => {
+    
   });
 
-  test('added_books', async ({ page }) => {
-  // Click button:has-text("Login")
-  await page.locator('button:has-text("Login")').click();
-  await expect(page).toHaveURL('https://demoqa.com/login');
-  // Click [placeholder="UserName"]
-  await page.locator('[placeholder="UserName"]').click();
-  // Fill [placeholder="UserName"]
-  await page.locator('[placeholder="UserName"]').fill('Bilal@2595');
-  // Press Tab
-  await page.locator('[placeholder="UserName"]').press('Tab');
-  // Fill [placeholder="Password"]
-  await page.locator('[placeholder="Password"]').fill('Bilal@2595');
-  // Click button:has-text("Login")
-  await Promise.all([
-    page.waitForNavigation(/*{ url: 'https://demoqa.com/books' }*/),
-    page.locator('button:has-text("Login")').click()
-  ]);
-  // Click li:has-text("Profile")
-  await page.locator('li:has-text("Profile")').click();
-  await expect(page).toHaveURL('https://demoqa.com/profile');
-  // Click text=Git Pocket Guide
-  await page.locator('text=Git Pocket Guide').click();
-  await expect(page).toHaveURL('https://demoqa.com/profile?book=9781449325862'); //validating the presence of added book
-  // Click text=Back To Book Store
-  await page.locator('text=Back To Book Store').click();
-  await expect(page).toHaveURL('https://demoqa.com/profile');
-  // Click text=Log out
-  await page.locator('text=Log out').click();
-  await expect(page).toHaveURL('https://demoqa.com/login');
-  });
 });
 
 

@@ -1,6 +1,16 @@
-// playwright-dev-page.ts
-import { expect, Locator, Page, test } from '@playwright/test';
-export class helper {
+
+import { } from "@playwright/test";
+
+export  class helper {
+
+async click(element){
+    
+
   
+}
+async enterText(element,text){
+
+    
+  }
 }
 
