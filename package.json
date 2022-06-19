@@ -6,16 +6,18 @@
   "scripts": {
     "tsc": "tsc --incremental -p tsconfig.json",
     "test": "playwright test -c javaScriptFiles",
-    "chrome" :"npx playwright test --project=chromium --reporter=html"
+    "chrome": "npx playwright test --project=chromium --reporter=html",
+    "report": " npx playwright show-report"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "BILAL MOHAMMAD",
+  "license": "",
   "devDependencies": {
     "@playwright/test": "^1.21.1",
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "allure-playwright": "^2.0.0-beta.16"
+    "allure-playwright": "^2.0.0-beta.16",
+    "mysql": "^2.18.1"
   }
 }

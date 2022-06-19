@@ -15,7 +15,7 @@ const config = {
             name: 'chromium',
             use: {
                 browserName: 'chromium',
-                headless: true,
+                headless: false,
                 ignoreHTTPSErrors: true,
                 video: 'on',
                 geolocation: { longitude: 22, latitude: 57.5 },

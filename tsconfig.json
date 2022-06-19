@@ -5,6 +5,8 @@
         "moduleResolution": "Node",
         "sourceMap": true,
         "outDir": "javaScriptFiles",
+        "esModuleInterop": true,
+        "resolveJsonModule": true
     }
     
 }
